@@ -1,0 +1,855 @@
+{
+  "nonleague": {
+    "MUT": "Moline Universal Tractors", 
+    "DTH": "Detroit Heralds", 
+    "CTP": "Cleveland Panthers", 
+    "DTM": "Detroit Maroons", 
+    "FWF": "Fort Wayne Friars", 
+    "SCALP": "Rochester Scalpers", 
+    "DEC": "Decatur Staleys", 
+    "UKC": "Utica K. of C.", 
+    "PAN": "Columbus Panhandles", 
+    "WHE": "Wheeling Stogies", 
+    "ALLBUF": "All Buffalo", 
+    "WNJ": "Washington and Jefferson Collegians", 
+    "STAYM": "Chicago Stayms", 
+    "LNS": "Lansing Oldsmobile", 
+    "SPI": "St. Paul Ideals", 
+    "RKF": "Rockford A.C.", 
+    "CHAMP": "Champaign Legion", 
+    "ALLTON": "All Tonawanda", 
+    "LSQ": "Logan Square", 
+    "UAA": "Union A.A.", 
+    "PTQ": "Pitcairn Quakers", 
+    "FTP": "Fort Porter", 
+    "WBUF": "West Buffalo", 
+    "CWP": "Columbus Wagner Pirates", 
+    "THORN": "Thorn Tornados", 
+    "ELY": "Elyria Athletics", 
+    "CHT": "Chicago Tigers", 
+    "GARY": "Gary Elks", 
+    "BOOST": "Chicago Boosters", 
+    "PUL": "Pullman Thorns", 
+    "MCK": "McKeesport Olympics", 
+    "ZAN": "Zanesville Mark Gray", 
+    "GLEE": "Washington Glee Club", 
+    "SYR": "Syracuse Stars", 
+    "RICH": "Richmond Athletics", 
+    "KEW": "Kewanee Walworths"
+  }, 
+  "teams": [
+    {
+      "code": "ARI", 
+      "short_name": "Cardinals", 
+      "full_name": "Arizona Cardinals", 
+      "aliases": [
+        {
+          "code": "PHO", 
+          "short_name": "Cardinals", 
+          "full_name": "Phoenix Cardinals", 
+          "aliases": []
+        }, 
+        {
+          "code": "STL", 
+          "short_name": "Cardinals", 
+          "full_name": "St. Louis Cardinals", 
+          "aliases": []
+        }, 
+        {
+          "code": "CRD", 
+          "short_name": "Cardinals", 
+          "full_name": "Chicago Cardinals", 
+          "aliases": []
+        }, 
+        {
+          "show": true, 
+          "code": "CHIP", 
+          "short_name": "Card-Pitt", 
+          "full_name": "Chi/Pitt Cards/Steelers", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "code": "ATL", 
+      "short_name": "Falcons", 
+      "full_name": "Atlanta Falcons", 
+      "aliases": []
+    }, 
+    {
+      "code": "RAV", 
+      "short_name": "Ravens", 
+      "full_name": "Baltimore Ravens", 
+      "aliases": []
+    }, 
+    {
+      "code": "BUF", 
+      "short_name": "Bills", 
+      "full_name": "Buffalo Bills", 
+      "aliases": []
+    }, 
+    {
+      "code": "CAR", 
+      "short_name": "Panthers", 
+      "full_name": "Carolina Panthers", 
+      "aliases": []
+    }, 
+    {
+      "code": "CHI", 
+      "short_name": "Bears", 
+      "full_name": "Chicago Bears", 
+      "aliases": [
+        {
+          "code": "CHS", 
+          "short_name": "Staleys", 
+          "full_name": "Chicago Staleys", 
+          "aliases": []
+        }, 
+        {
+          "code": "DEC", 
+          "short_name": "Staleys", 
+          "full_name": "Decatur Staleys", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "code": "CIN", 
+      "short_name": "Bengals", 
+      "full_name": "Cincinnati Bengals", 
+      "aliases": []
+    }, 
+    {
+      "code": "CLE", 
+      "short_name": "Browns", 
+      "full_name": "Cleveland Browns", 
+      "aliases": []
+    }, 
+    {
+      "code": "DAL", 
+      "short_name": "Cowboys", 
+      "full_name": "Dallas Cowboys", 
+      "aliases": []
+    }, 
+    {
+      "code": "DEN", 
+      "short_name": "Broncos", 
+      "full_name": "Denver Broncos", 
+      "aliases": []
+    }, 
+    {
+      "code": "DET", 
+      "short_name": "Lions", 
+      "full_name": "Detroit Lions", 
+      "aliases": [
+        {
+          "code": "POR", 
+          "short_name": "Spartans", 
+          "full_name": "Portsmouth Spartans", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "code": "GNB", 
+      "short_name": "Packers", 
+      "full_name": "Green Bay Packers", 
+      "aliases": []
+    }, 
+    {
+      "code": "HTX", 
+      "short_name": "Texans", 
+      "full_name": "Houston Texans", 
+      "aliases": []
+    }, 
+    {
+      "code": "IND", 
+      "short_name": "Colts", 
+      "full_name": "Indianapolis Colts", 
+      "aliases": [
+        {
+          "code": "BAL", 
+          "short_name": "Colts", 
+          "full_name": "Baltimore Colts", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "code": "JAX", 
+      "short_name": "Jaguars", 
+      "full_name": "Jacksonville Jaguars", 
+      "aliases": []
+    }, 
+    {
+      "code": "KAN", 
+      "short_name": "Chiefs", 
+      "full_name": "Kansas City Chiefs", 
+      "aliases": [
+        {
+          "code": "DTX", 
+          "short_name": "Texans", 
+          "full_name": "Dallas Texans", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "code": "RAM", 
+      "short_name": "Rams", 
+      "full_name": "Los Angeles Rams", 
+      "aliases": [
+        {
+          "code": "SLR", 
+          "short_name": "Rams", 
+          "full_name": "St. Louis Rams", 
+          "aliases": []
+        }, 
+        {
+          "code": "CRAM", 
+          "short_name": "Rams", 
+          "full_name": "Cleveland Rams", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "code": "MIA", 
+      "short_name": "Dolphins", 
+      "full_name": "Miami Dolphins", 
+      "aliases": []
+    }, 
+    {
+      "code": "MIN", 
+      "short_name": "Vikings", 
+      "full_name": "Minnesota Vikings", 
+      "aliases": []
+    }, 
+    {
+      "code": "NWE", 
+      "short_name": "Patriots", 
+      "full_name": "New England Patriots", 
+      "aliases": [
+        {
+          "code": "BOS", 
+          "short_name": "Patriots", 
+          "full_name": "Boston Patriots", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "code": "NOR", 
+      "short_name": "Saints", 
+      "full_name": "New Orleans Saints", 
+      "aliases": []
+    }, 
+    {
+      "code": "NYG", 
+      "short_name": "Giants", 
+      "full_name": "New York Giants", 
+      "aliases": []
+    }, 
+    {
+      "code": "NYJ", 
+      "short_name": "Jets", 
+      "full_name": "New York Jets", 
+      "aliases": [
+        {
+          "code": "NYT", 
+          "short_name": "Titans", 
+          "full_name": "New York Titans", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "code": "OAK", 
+      "short_name": "Raiders", 
+      "full_name": "Oakland Raiders", 
+      "aliases": [
+        {
+          "code": "RAI", 
+          "short_name": "Raiders", 
+          "full_name": "Los Angeles Raiders", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "code": "PHI", 
+      "short_name": "Eagles", 
+      "full_name": "Philadelphia Eagles", 
+      "aliases": [
+        {
+          "show": true, 
+          "code": "PHP", 
+          "short_name": "Steagles", 
+          "full_name": "Phi/Pitt Eagles/Steelers", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "code": "PIT", 
+      "short_name": "Steelers", 
+      "full_name": "Pittsburgh Steelers", 
+      "aliases": [
+        {
+          "code": "PIR", 
+          "short_name": "Pirates", 
+          "full_name": "Pittsburgh Pirates", 
+          "aliases": []
+        }, 
+        {
+          "show": false, 
+          "code": "CHIP", 
+          "short_name": "Cards/Steelers", 
+          "full_name": "Chi/Pitt Cards/Steelers", 
+          "aliases": []
+        }, 
+        {
+          "show": false, 
+          "code": "PHP", 
+          "short_name": "Steagles", 
+          "full_name": "Phi/Pitt Eagles/Steelers", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "code": "SDG", 
+      "short_name": "Chargers", 
+      "full_name": "San Diego Chargers", 
+      "aliases": [
+        {
+          "code": "LAC", 
+          "short_name": "Chargers", 
+          "full_name": "Los Angeles Chargers", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "code": "SFO", 
+      "short_name": "49ers", 
+      "full_name": "San Francisco 49ers", 
+      "aliases": []
+    }, 
+    {
+      "code": "SEA", 
+      "short_name": "Seahawks", 
+      "full_name": "Seattle Seahawks", 
+      "aliases": []
+    }, 
+    {
+      "code": "TAM", 
+      "short_name": "Buccaneers", 
+      "full_name": "Tampa Bay Buccaneers", 
+      "aliases": []
+    }, 
+    {
+      "code": "TEN", 
+      "short_name": "Titans", 
+      "full_name": "Tennessee Titans", 
+      "aliases": [
+        {
+          "code": "HOU", 
+          "short_name": "Oilers", 
+          "full_name": "Houston Oilers", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "code": "WAS", 
+      "short_name": "Team from Washington", 
+      "full_name": "Washington", 
+      "aliases": [
+        {
+          "disambiguation": " (1933-36)", 
+          "code": "BRS", 
+          "short_name": "Team from Boston", 
+          "full_name": "Boston", 
+          "aliases": []
+        }, 
+        {
+          "code": "BBR", 
+          "short_name": "Braves", 
+          "full_name": "Boston Braves", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "code": "NONE", 
+      "short_name": "Team", 
+      "full_name": "--------------------------", 
+      "aliases": []
+    }, 
+    {
+      "code": "AKR", 
+      "short_name": "Pros", 
+      "full_name": "Akron Pros", 
+      "aliases": [
+        {
+          "show": true, 
+          "code": "AKI", 
+          "short_name": "Indians", 
+          "full_name": "Akron Indians", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "disambiguation": " (1947-50)", 
+      "code": "BCL", 
+      "short_name": "Colts", 
+      "full_name": "Baltimore Colts", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "BYK", 
+      "short_name": "Yanks", 
+      "full_name": "Boston Yanks", 
+      "aliases": []
+    }, 
+    {
+      "code": "BDA", 
+      "short_name": "Dodgers", 
+      "show": false, 
+      "disambiguation": " (1946-48)", 
+      "full_name": "Brooklyn Dodgers", 
+      "aliases": []
+    }, 
+    {
+      "disambiguation": " (1930-44)", 
+      "code": "BKN", 
+      "short_name": "Dodgers", 
+      "full_name": "Brooklyn Dodgers", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "BKL", 
+      "short_name": "Lions", 
+      "full_name": "Brooklyn Lions", 
+      "aliases": []
+    }, 
+    {
+      "disambiguation": " (AAFC)", 
+      "code": "BIL", 
+      "short_name": "Bills", 
+      "full_name": "Buffalo Bills", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "BAA", 
+      "short_name": "All-Americans", 
+      "full_name": "Buffalo All-Americans", 
+      "aliases": [
+        {
+          "show": false, 
+          "code": "BFB", 
+          "short_name": "Bisons", 
+          "full_name": "Buffalo Bisons", 
+          "aliases": []
+        }, 
+        {
+          "show": false, 
+          "code": "BFR", 
+          "short_name": "Rangers", 
+          "full_name": "Buffalo Rangers", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "code": "CAN", 
+      "short_name": "Bulldogs", 
+      "full_name": "Canton Bulldogs", 
+      "aliases": []
+    }, 
+    {
+      "code": "CHR", 
+      "short_name": "Rockets", 
+      "full_name": "Chicago Rockets", 
+      "aliases": [
+        {
+          "code": "CHH", 
+          "short_name": "Hornets", 
+          "full_name": "Chicago Hornets", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "show": false, 
+      "code": "CHT", 
+      "short_name": "Tigers", 
+      "full_name": "Chicago Tigers", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "CEL", 
+      "short_name": "Celts", 
+      "full_name": "Cincinnati Celts", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "RED", 
+      "short_name": "Reds", 
+      "full_name": "Cincinnati Reds", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "CLB", 
+      "short_name": "Bulldogs", 
+      "full_name": "Cleveland Bulldogs", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "CLI", 
+      "short_name": "Indians", 
+      "full_name": "Cleveland Indians", 
+      "aliases": [
+        {
+          "show": false, 
+          "code": "CLT", 
+          "short_name": "Tigers", 
+          "full_name": "Cleveland Tigers", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "show": false, 
+      "code": "PAN", 
+      "short_name": "Panhandles", 
+      "full_name": "Columbus Panhandles", 
+      "aliases": [
+        {
+          "show": false, 
+          "code": "COL", 
+          "short_name": "Tigers", 
+          "full_name": "Columbus Tigers", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "show": false, 
+      "code": "DTX2", 
+      "short_name": "Texans", 
+      "full_name": "Dallas Texans", 
+      "aliases": []
+    }, 
+    {
+      "code": "DAY", 
+      "short_name": "Triangles", 
+      "full_name": "Dayton Triangles", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "DTH", 
+      "short_name": "Heralds", 
+      "full_name": "Detroit Heralds", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "DTP", 
+      "short_name": "Panthers", 
+      "full_name": "Detroit Panthers", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "DTT", 
+      "short_name": "Tigers", 
+      "full_name": "Detroit Tigers", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "DTW", 
+      "short_name": "Wolverines", 
+      "full_name": "Detroit Wolverines", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "DLK", 
+      "short_name": "Kelleys", 
+      "full_name": "Duluth Kelleys", 
+      "aliases": [
+        {
+          "show": false, 
+          "code": "DUL", 
+          "short_name": "Eskimos", 
+          "full_name": "Duluth Eskimos", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "show": false, 
+      "code": "EVN", 
+      "short_name": "Crimson Giants", 
+      "full_name": "Evansville Crimson Giants", 
+      "aliases": []
+    }, 
+    {
+      "code": "FRA", 
+      "short_name": "Yellow Jackets", 
+      "full_name": "Frankford Yellow Jackets", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "HAM", 
+      "short_name": "Pros", 
+      "full_name": "Hammond Pros", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "HAR", 
+      "short_name": "Blues", 
+      "full_name": "Hartford Blues", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "KCC", 
+      "short_name": "Yellow Jackets", 
+      "full_name": "Kansas City Cowboys", 
+      "aliases": [
+        {
+          "show": false, 
+          "code": "KCB", 
+          "short_name": "Blues", 
+          "full_name": "Kansas City Blues", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "show": false, 
+      "code": "KEN", 
+      "short_name": "Maroons", 
+      "full_name": "Kenosha Maroons", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "LAB", 
+      "short_name": "Buccaneers", 
+      "full_name": "Los Angeles Buccaneers", 
+      "aliases": []
+    }, 
+    {
+      "code": "LAD", 
+      "short_name": "Dons", 
+      "full_name": "Los Angeles Dons", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "LOU", 
+      "short_name": "Colonels", 
+      "full_name": "Louisville Colonels", 
+      "aliases": [
+        {
+          "show": false, 
+          "code": "LOB", 
+          "short_name": "Brecks", 
+          "full_name": "Louisville Brecks", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "show": false, 
+      "code": "MIS", 
+      "short_name": "Seahawks", 
+      "full_name": "Miami Seahawks", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "MIL", 
+      "short_name": "Badgers", 
+      "full_name": "Milwaukee Badgers", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "MAR", 
+      "short_name": "Marines", 
+      "full_name": "Minneapolis Marines", 
+      "aliases": [
+        {
+          "show": false, 
+          "code": "MRJ", 
+          "short_name": "Red Jackets", 
+          "full_name": "Minneapolis Red Jackets", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "show": false, 
+      "code": "MUN", 
+      "short_name": "Flyers", 
+      "full_name": "Muncie Flyers", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "NYBG", 
+      "short_name": "Brickley Giants", 
+      "full_name": "New York Brickley Giants", 
+      "aliases": []
+    }, 
+    {
+      "code": "NYY", 
+      "short_name": "Yankees", 
+      "show": false, 
+      "disambiguation": " (1927-28)", 
+      "full_name": "New York Yankees", 
+      "aliases": []
+    }, 
+    {
+      "disambiguation": " (AAFC)", 
+      "code": "NYY2", 
+      "short_name": "Yankees", 
+      "full_name": "New York Yankees", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "NYY3", 
+      "short_name": "Yanks", 
+      "full_name": "New York Yanks", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "EWK", 
+      "short_name": "Tornadoes", 
+      "full_name": "Newark Tornadoes", 
+      "aliases": [
+        {
+          "show": false, 
+          "code": "ORA", 
+          "short_name": "Tornadoes", 
+          "full_name": "Orange Tornadoes", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "show": false, 
+      "code": "OOR", 
+      "short_name": "Indians", 
+      "full_name": "Oorang Indians", 
+      "aliases": []
+    }, 
+    {
+      "code": "POT", 
+      "short_name": "Maroons", 
+      "full_name": "Pottsville Maroons", 
+      "aliases": [
+        {
+          "code": "BUL", 
+          "short_name": "Bulldogs", 
+          "full_name": "Boston Bulldogs", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "code": "PRO", 
+      "short_name": "Steam Roller", 
+      "full_name": "Providence Steam Roller", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "RCL", 
+      "short_name": "Legion", 
+      "full_name": "Racine Legion", 
+      "aliases": [
+        {
+          "show": false, 
+          "code": "RAC", 
+          "short_name": "Tornadoes", 
+          "full_name": "Racine Tornadoes", 
+          "aliases": []
+        }
+      ]
+    }, 
+    {
+      "show": false, 
+      "code": "RCH", 
+      "short_name": "Jeffersons", 
+      "full_name": "Rochester Jeffersons", 
+      "aliases": []
+    }, 
+    {
+      "code": "RII", 
+      "short_name": "Independents", 
+      "full_name": "Rock Island Independents", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "SLA", 
+      "short_name": "All-Stars", 
+      "full_name": "St. Louis All-Stars", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "SLG", 
+      "short_name": "Gunners", 
+      "full_name": "St. Louis Gunners", 
+      "aliases": []
+    }, 
+    {
+      "code": "SIS", 
+      "short_name": "Stapletons", 
+      "full_name": "Staten Island Stapletons", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "TOL", 
+      "short_name": "Maroons", 
+      "full_name": "Toledo Maroons", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "TON", 
+      "short_name": "Kardex", 
+      "full_name": "Tonawanda Kardex", 
+      "aliases": []
+    }, 
+    {
+      "show": false, 
+      "code": "WSS", 
+      "short_name": "Senators", 
+      "full_name": "Washington Senators", 
+      "aliases": []
+    }
+  ]
+}

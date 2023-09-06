@@ -3,13 +3,14 @@ from datetime import datetime, timedelta
 import pandas as pd
 from bokeh.layouts import row
 from bokeh.plotting import figure, curdoc
+from bokeh.settings import settings
 
 from controlbox import ControlBox
 from displaydata import DisplayData
 from mainplot import MainPlot
 
 pd.set_option("display.max_colwidth", 10000)
-
+settings.resources = 'cdn'
 
 def convert_time_values(val):
     if type(val[0]) == int or type(val[0]) == float:

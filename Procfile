@@ -1,1 +1,1 @@
-web: bokeh serve --ssl-certfile private_key.pem --port=$PORT --allow-websocket-origin=team-scorigami.herokuapp.com --address=0.0.0.0 --use-xheaders scorigami.py
+web: bokeh serve --port=$PORT --allow-websocket-origin=team-scorigami.herokuapp.com --address=0.0.0.0 --use-xheaders scorigami.py

@@ -11,10 +11,11 @@ from bokeh.palettes import magma
 class DisplayData(object):
     def __init__(self, input_csv, team_list_json):
         self.built = False
-        pfr = pd.DataFrame.from_csv(input_csv)
+        pfr = pd.read_csv(input_csv)
         pfr = add_scorigami_column(pfr)
 
         self.team_list = None
+        self.nonleague_dict = None
         self.process_team_list(team_list_json)
 
         self.in_data = {'Home': pfr['Tm'],
@@ -85,7 +86,8 @@ class DisplayData(object):
                                                                  'Home': 'Opp', 'Home Score': 'Opp Score'})
             df2 = df[df['Home'].isin(code_list)].rename(columns={'Home': 'Team', 'Home Score': 'Team Score',
                                                                  'Away': 'Opp', 'Away Score': 'Opp Score'})
-            self.df = df1.append(df2)
+            self.df = pd.concat([df1, df2], sort=True)
+
         self.df = self.df[self.df['Date'] <= end]
         self.df = self.df[self.df['Date'] >= start]
 

@@ -3,7 +3,6 @@ from bokeh.models import ColumnDataSource, Range1d, HoverTool, FuncTickFormatter
 from bokeh.models.glyphs import MultiLine
 from bokeh.plotting import figure
 
-
 def get_tooltip():
     return """
     <div>
@@ -25,8 +24,8 @@ def get_tooltip():
 
 class MainPlot(object):
     def __init__(self, source):
-        plot = figure(plot_width=900, plot_height=900,
-                      x_minor_ticks=None, y_minor_ticks=None,
+        plot = figure(width=900, height=900,
+                      x_minor_ticks='auto', y_minor_ticks='auto',
                       x_axis_location='above',
                       tools='save')
         plot.y_range = Range1d(-73.5, 0.5)
@@ -42,8 +41,8 @@ class MainPlot(object):
 
         plot.background_fill_color = '#cccccc'
         plot.grid.grid_line_color = None
-        plot.xaxis.ticker = range(0, 74, 7)
-        plot.yaxis.ticker = range(0, -74, -7)
+        plot.xaxis.ticker = list(range(0, 74, 7))
+        plot.yaxis.ticker = list(range(0, -74, -7))
         plot.axis.major_tick_in = 1
         plot.axis.major_tick_out = -1
         plot.axis.major_label_text_font_size = '8pt'

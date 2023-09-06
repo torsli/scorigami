@@ -157,7 +157,7 @@
       "aliases": []
     }, 
     {
-      "code": "HTX", 
+      "code": "HOU",
       "short_name": "Texans", 
       "full_name": "Houston Texans", 
       "aliases": []
@@ -354,7 +354,7 @@
       "full_name": "Tennessee Titans", 
       "aliases": [
         {
-          "code": "HOU", 
+          "code": "HOO",
           "short_name": "Oilers", 
           "full_name": "Houston Oilers", 
           "aliases": []
@@ -363,8 +363,8 @@
     }, 
     {
       "code": "WAS", 
-      "short_name": "Team from Washington", 
-      "full_name": "Washington", 
+      "short_name": "Commanders",
+      "full_name": "Washington Commanders",
       "aliases": [
         {
           "disambiguation": " (1933-36)", 

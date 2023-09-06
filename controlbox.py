@@ -1,6 +1,6 @@
 from datetime import datetime as dt, timedelta
 
-from bokeh.layouts import widgetbox
+from bokeh.layouts import column
 from bokeh.models import Select, DatePicker, CheckboxGroup, Div
 
 
@@ -9,8 +9,8 @@ class ControlBox(object):
         self.team = Select(title='Choose a Team', options=team_list, value='All')
         st = dt.strptime(str(interval[0]), '%Y%m%d')
         en = dt.strptime(str(interval[1]), '%Y%m%d') + timedelta(1)
-        self.dp1 = DatePicker(title='Start Date:', min_date=st, max_date=en, value=st)
-        self.dp2 = DatePicker(title='End Date:', min_date=st, max_date=en, value=en)
+        self.dp1 = DatePicker(title='Start Date:', min_date=st.date(), max_date=en.date(), value=st.date())
+        self.dp2 = DatePicker(title='End Date:', min_date=st.date(), max_date=en.date(), value=en.date())
 
         self.gradient = CheckboxGroup(labels=['Show gradient'], active=[])
         self.movbox = CheckboxGroup(labels=['Show margin of victory grid'], active=[])
@@ -18,14 +18,14 @@ class ControlBox(object):
         self.ticker = Div(text='')
 
     def get_layout(self):
-        return widgetbox(self.team,
-                         self.dp1,
-                         self.dp2,
-                         self.gradient,
-                         self.movbox,
-                         self.upperbox,
-                         self.ticker,
-                         width=300)
+        return column(self.team,
+                      self.dp1,
+                      self.dp2,
+                      self.gradient,
+                      self.movbox,
+                      self.upperbox,
+                      self.ticker,
+                      width=300)
 
     def update_ticker(self, df):
         if df.empty:

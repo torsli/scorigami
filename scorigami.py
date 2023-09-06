@@ -1,11 +1,7 @@
 from datetime import datetime, timedelta
 
-import numpy as np
 import pandas as pd
 from bokeh.layouts import row
-from bokeh.models import ColumnDataSource, Range1d, HoverTool, FuncTickFormatter
-from bokeh.models.glyphs import MultiLine
-from bokeh.palettes import grey
 from bokeh.plotting import figure, curdoc
 
 from controlbox import ControlBox
@@ -19,15 +15,19 @@ def convert_time_values(val):
     if type(val[0]) == int or type(val[0]) == float:
         s = datetime.utcfromtimestamp(float(val[0]/1000)) if val[0] > 0 \
             else datetime(1970, 1, 1) + timedelta(seconds=val[0]/1000)
+        start = 10000*s.year + 100*s.month + s.day
     else:
         s = val[0]
-    start = 10000*s.year + 100*s.month + s.day
+        # start = 10000*s.year + 100*s.month + s.day
+        start = int(val[0].replace('-', ''))
     if type(val[1]) == int or type(val[1]) == float:
         s = datetime.utcfromtimestamp(float(val[1]/1000)) if val[1] > 0 \
             else datetime(1970, 1, 1) + timedelta(seconds=val[1]/1000)
+        end = 10000 * s.year + 100 * s.month + s.day
     else:
         s = val[1]
-    end = 10000*s.year + 100*s.month + s.day
+        # end = 10000 * s.year + 100 * s.month + s.day
+        end = int(val[1].replace('-', ''))
     return start, end
 
 
@@ -79,7 +79,7 @@ class Scorigami(object):
         return row(self.control_box.get_layout(), self.main_plot.get_plot())
 
 
-if __name__ == '__main__' or 'bk_script' in __name__:
+if __name__ == '__main__' or 'bokeh' in __name__ or 'bk' in __name__:
     p = Scorigami('data/scorigami.csv', 'data/teamdirectory.json')
     p.toggle_gridlines()
     p.update()

@@ -1,1 +1,1 @@
-web: bokeh serve --port=$PORT --allow-websocket-origin=team-scorigami.herokuapp.com --address=0.0.0.0 --use-xheaders scorigami.py
+web: bokeh serve --port=$PORT --allow-websocket-origin=team-scorigami-61d872d92624.herokuapp.com --address=0.0.0.0 --use-xheaders scorigami.py

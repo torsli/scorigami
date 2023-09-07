@@ -273,6 +273,12 @@
           "short_name": "Raiders", 
           "full_name": "Los Angeles Raiders", 
           "aliases": []
+        },
+        {
+          "code": "LVR",
+          "short_name": "Raiders",
+          "full_name": "Las Vegas Raiders",
+          "aliases": []
         }
       ]
     }, 

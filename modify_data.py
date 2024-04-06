@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 
-new_data = pd.read_csv('data/newformatdata.csv')
+new_data = pd.read_csv('data/2023-data.csv')
 
 with open('data/teamdirectory.json', 'r') as json_file:
     team_info = json.load(json_file)
@@ -35,16 +35,16 @@ for index, row in new_data.iterrows():
     foo[4] = row['Time'][:-2]
     foo[6] = 'N' if row['Neut'] == 'N' else ''
     foo[7] = bar[row['Loser/tie']] if home_team_wins else bar[row['Winner/tie']]
-    if 'Wild' in row['Week']:
-        foo[8] = 19
-    elif 'Divis' in row['Week']:
-        foo[8] = 20
-    elif 'ConfC' in row['Week']:
-        foo[8] = 21
-    elif 'Super' in row['Week']:
-        foo[8] = 22
-    else:
-        foo[8] = row['Week']
+    # if 'Wild' in row['Week']:
+    #     foo[8] = 19
+    # elif 'Divis' in row['Week']:
+    #     foo[8] = 20
+    # elif 'ConfC' in row['Week']:
+    #     foo[8] = 21
+    # elif 'Super' in row['Week']:
+    #     foo[8] = 22
+    # else:
+    foo[8] = row['Week']
     foo[10] = row['Day']
     foo[11] = f"{res} {max(row['PF'], row['PA'])}-{min(row['PF'], row['PA'])}"
     foo[13] = row['PF'] if home_team_wins else row['PA']
